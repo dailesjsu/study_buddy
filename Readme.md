@@ -25,4 +25,4 @@
  - Dark mode
  - Find study buddy: using your location, we see in our data base who else in proximity of you or the general area of the school   would    like to study the same course
  - Rate study buddy: each user will be assigned points, and based on your rating from your buddy, you will be rated and get to rate others.
--add friend:keep track of list of people that you studied with
+- add friend:keep track of list of people that you studied with
