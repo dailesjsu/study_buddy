@@ -1,7 +1,6 @@
 from flask import render_template, flash, redirect, url_for, session
 from app import app # from __init__.py
 from app import db # from __init__.py
-from app import socketio # from init.py
 from app.forms import LoginForm
 from app.forms import CourseForm
 from app.forms import RegistrationForm
