@@ -15,7 +15,6 @@ from flask_login import login_required
 from flask import request
 from werkzeug.urls import url_parse
 from app.models import User, Post
-from flask_socketio import SocketIO, send, join_room, leave_room
 import secrets
 import os
 
@@ -123,26 +122,3 @@ def about():
     return render_template('about.html')
 
 
-
-'''
-@socketio.on('message')
-def handleMessage(msg):
-    print('Message: ' + msg)
-    send(msg, broadcast=True)
-
-
-@socketio.on('join')
-def on_join(data):
-    username = data['username']
-    room = data['room']
-    join_room(room)
-    send(username + ' has entered the room.', room=room)
-
-
-@socketio.on('leave')
-def on_leave(data):
-    username = data['username']
-    room = data['room']
-    leave_room(room)
-    send(username + ' has left the room.', room=room)
-'''
