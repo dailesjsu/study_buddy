@@ -1,0 +1,21 @@
+.sign_in{
+    padding-left: 10%;
+}
+#img_people{
+    margin-left: 40%;
+}
+
+body{
+    background-image: url("../img/paper.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 60%;
+    background-position-y: 55%;
+    color:#F0EFF9 ;
+}
+
+.chat_box{
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
