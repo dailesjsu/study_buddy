@@ -1,6 +1,9 @@
 # study_buddy 
 [![Build Status](https://travis-ci.com/dailesjsu/study_buddy.svg?branch=master)](https://travis-ci.com/dailesjsu/study_buddy)
 
+#Link to our web-applocation:
+http://studybuddy-sjsu.herokuapp.com
+
 ## How to use the application:
  Have **flask, python3 and mysql** installed
  - Windows Users: 
