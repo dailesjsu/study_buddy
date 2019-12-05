@@ -29,5 +29,8 @@ http://studybuddy-sjsu.herokuapp.com
  - invisible: the users won't be able to see you.
  - Dark mode
  - Find study buddy: using your location, we see in our data base who else in proximity of you or the general area of the school   would    like to study the same course
- - Rate study buddy: each user will be assigned points, and based on your rating from your buddy, you will be rated and get to rate others.
 - add friend:keep track of list of people that you studied with
+- remove friend
+-change profile pic
+- change username
+-change class
