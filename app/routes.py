@@ -111,11 +111,6 @@ def profilePage():
     #user = User.query.filter_by(username = current_user.username)
     return render_template("profile.html", title ='Profile', image_file=image_file, form=form )
 
-
-@app.route("/chat")
-def chat():
- return render_template("chat.html")
-
 @app.route('/about')
 def about():
     return render_template('about.html')
