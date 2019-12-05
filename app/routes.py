@@ -4,7 +4,6 @@ from app import db # from __init__.py
 from app.forms import LoginForm
 from app.forms import CourseForm
 from app.forms import RegistrationForm
-from app.forms import FriendsForm
 from app.forms import profileForm
 from app.models import User
 from app.models import Post
@@ -25,14 +24,7 @@ def index():
     form = CourseForm()
     update_course = User.query.filter_by(id=current_user.id).first()
     update_course.student_courses = form.student_courses.data
-#    db.session.commit()
-    if form.validate_on_submit():
-        current_user.student_courses = form.student_courses.data
-        db.session.commit()
-        flash("Course updated")
-    elif request.method == 'GET':
-        form.student_courses = current_user.student_courses
-    db.session.commit()
+    #db.session.commit() # this nulls the course everytime it reloads
     flash('Looking for students with the same course')
     found_buddy = User.query.filter_by(student_courses=update_course.student_courses)
     return render_template('index.html', title='User_Home', form=form, found_buddy=found_buddy)
@@ -53,7 +45,7 @@ def login():
         # return to page before user got asked to login
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':
-            next_page = url_for('index')
+            next_page = url_for('profilePage')
 
         return redirect(next_page)
     return render_template('login.html', title='Sign in', form=form)
@@ -69,7 +61,7 @@ def register():
         return redirect(url_for('index'))
     form = RegistrationForm()
     if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data) # need something like this for student column of courses
+        user = User(username=form.username.data, email=form.email.data, student_courses= form.course.data) # need something like this for student column of courses
         user.set_password(form.password.data)
         post = Post(body=form.username.data )
         db.session.add(user)
@@ -93,6 +85,9 @@ def save_picture(form_picture):
     return picture_fn
 
 
+@app.route('/profile/<current_user.username>')
+def uniqueProfs(username)
+
 @app.route('/profile', methods=["Get", "POST"])
 @login_required
 def profilePage():
@@ -101,18 +96,28 @@ def profilePage():
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
             current_user.image_file = picture_file
-        current_user.username = form.username.data
+        if form.name.data:
+            current_user.username = form.name.data
+        if form.course.data:
+            current_user.student_courses = form.course.data
         db.session.commit()
-        flash("Name updated")
+        flash("Updated")
         return redirect(url_for('profilePage'))
     elif request.method == 'GET':
         form.username = current_user.username
+        form.student_courses = current_user.student_courses
     image_file = url_for('static', filename = 'css/prof/' + current_user.image_file)
-    #user = User.query.filter_by(username = current_user.username)
-    return render_template("profile.html", title ='Profile', image_file=image_file, form=form )
+    return render_template("profile.html", title ='Profile', image_file=image_file, form=form)
+
 
 @app.route('/about')
 def about():
     return render_template('about.html')
 
 
+'''
+todo:
+        new location api?
+        darkmode
+        look into bootstrap for css
+'''
