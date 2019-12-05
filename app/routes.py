@@ -85,9 +85,6 @@ def save_picture(form_picture):
     return picture_fn
 
 
-@app.route('/profile/<current_user.username>')
-def uniqueProfs(username)
-
 @app.route('/profile', methods=["Get", "POST"])
 @login_required
 def profilePage():
