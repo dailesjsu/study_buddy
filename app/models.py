@@ -10,6 +10,7 @@ class User(UserMixin, db.Model): # tables are made by making classes, inorder to
     email = db.Column(db.String(128), index=True, unique=True)
     password_hash = db.Column(db.String(128))
     student_courses = db.Column(db.String(64), index=True, unique=False)
+    image_file = db.Column(db.String(64), nullable=False, default = 'default.jpeg')
     posts = db.relationship('Post', backref='author', lazy='dynamic') # lazy allows us to do operations a lot easier
     
 
@@ -43,17 +44,4 @@ def load_user(id):
 
 
 
-"""
-from app import db
-from app.models import User, Post
-db.create_all()
-u = User(username = 'Carlos', email='carlos@example.com')
-db.session.add(u)
-db.session.commit()
-u = User(username = 'Sam', email='sam@example.com')
-db.session.add(u)
-db.session.commit()
-users = User.query.all()   gives us all the users
-for user in users:
-    print(user.id, user.username, user.email)
 """
