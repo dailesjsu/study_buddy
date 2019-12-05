@@ -41,7 +41,3 @@ class Post(db.Model):  # how do we use this?
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
-
-
-
-"""
