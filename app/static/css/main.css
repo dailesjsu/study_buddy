@@ -1,22 +1,115 @@
-.sign_in{
+/*
+class .
+id #
+
+*/
+
+
+.sign_in, .registration{
     padding-left: 10%;
 }
+
 #img_people{
     margin-left: 40%;
 }
 
 body{
-    background-image: url("../img/paper.jpg");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: 60%;
-    background-position-y: 55%;
+
     color:#F0EFF9 ;
 }
 
+  #mapid {
+      height: 600px;
+      width: 600px;
+      margin-left: 300px;
+   }
 
-#mapid {
-	height: 1000px;
-	width: 1000px;
-	margin-left: 500px;
- }
+  #location_mapimage{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+  }
+
+
+/*css related to login.html*/
+ #login_img_paper, #reg_img_paper{
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.15;
+  background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.login_container, .register_container{
+    position: relative;
+    text-align: center;
+
+}
+
+.login_username, .register_user{
+    position: relative;
+
+}
+
+.login_password, .register_pass{
+    position: relative;
+
+}
+
+.reg_pass_check{
+  position: relative;
+}
+
+.register_email{
+  position: relative;
+}
+
+.login_sign_in_btn, .register_btn{
+    position: relative;
+
+}
+
+#login_sign_in, #reg_user{
+    position: relative;
+    left: 45%;
+}
+/* end of css login.html*/
+
+/*
+ css related to profile.html
+*/
+
+#profile_img_paper{
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.15;
+  background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+/* end of profile.html */
+
+
+
+/* css reltated to location.html */
+#location_img_paper{
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.15;
+    background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
