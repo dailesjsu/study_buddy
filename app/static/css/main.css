@@ -1,4 +1,3 @@
-
 /*
 class .
 id #
@@ -8,10 +7,9 @@ id #
 
 
 body{
-   
+
     color:#F0EFF9 ;
 }
-
 
 
 
@@ -21,62 +19,70 @@ body{
     border: 1px solid blue;
   }
   
- 
   
 /*css related to login.html*/
- #login_img_paper{
-    position: fixed;
+ #login_img_paper, #reg_img_paper{
+  position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
 	opacity: 0.15;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 	background-size: 100%;
-	background-attachment: fixed; 
-} 
+	background-attachment: fixed;
+}
 
-.login_container{
+.login_container, .register_container{
     position: relative;
     text-align: center;
 
 }
 
-.login_username{
+.login_username, .register_user{
     position: relative;
-    
-}
-.login_password{
-    position: relative;
-    
+
 }
 
-.login_sign_in_btn{
+.login_password, .register_pass{
     position: relative;
-    
+
 }
 
-#login_sign_in{
+.reg_pass_check{
+  position: relative;
+}
+
+.register_email{
+  position: relative;
+}
+
+.login_sign_in_btn, .register_btn{
     position: relative;
-    left: 40%;
+
+}
+
+#login_sign_in, #reg_user{
+    position: relative;
+    left: 45%;
 }
 /* end of css login.html*/
 
 /* profile.html */
 
 #profile_img_paper{
-    position: fixed;
+  position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
 	opacity: 0.15;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 	background-size: 100%;
-	background-attachment: fixed; 
-} 
+	background-attachment: fixed;
+}
 /* end of profile.html */
 
 
@@ -92,6 +98,7 @@ body{
 	opacity: 0.15;
     background-repeat: no-repeat;
 	background-size: 100%;
+
 	background-attachment: fixed; 
 } 
  

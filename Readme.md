@@ -33,4 +33,4 @@ http://studybuddy-sjsu.herokuapp.com
 - remove friend
 -change profile pic
 - change username
--change class
+- change class
