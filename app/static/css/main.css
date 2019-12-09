@@ -13,13 +13,6 @@ body{
 
 
 
-.chat_box{
-    width: 300px;
-    height: 100px;
-    border: 1px solid blue;
-  }
-  
-  
 /*css related to login.html*/
  #login_img_paper, #reg_img_paper{
   position: fixed;
@@ -34,7 +27,18 @@ body{
 	background-attachment: fixed;
 }
 
-.login_container, .register_container{
+
+#login_sign_in, #reg_user {
+    position: relative;
+    left: 45%;
+}
+/* end of css login.html*/
+
+
+/* profile.html */
+
+
+.login_container, .register_container, .update_containter{
     position: relative;
     text-align: center;
 
@@ -58,18 +62,11 @@ body{
   position: relative;
 }
 
-.login_sign_in_btn, .register_btn{
+.login_sign_in_btn, .register_btn, .btn_update{
     position: relative;
 
 }
 
-#login_sign_in, #reg_user{
-    position: relative;
-    left: 45%;
-}
-/* end of css login.html*/
-
-/* profile.html */
 
 #profile_img_paper{
   position: fixed;
@@ -99,9 +96,9 @@ body{
     background-repeat: no-repeat;
 	background-size: 100%;
 
-	background-attachment: fixed; 
-} 
- 
+	background-attachment: fixed;
+}
+
 #mapid {
     height: 600px;
     width: 600px;
@@ -129,7 +126,7 @@ body{
 	opacity: 0.15;
     background-repeat: no-repeat;
 	background-size: 100%;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 }
 
 
@@ -146,16 +143,24 @@ body{
 	opacity: 0.15;
     background-repeat: no-repeat;
 	background-size: 100%;
-	background-attachment: fixed; 
-} 
+	background-attachment: fixed;
+}
 
 #hello_friend{
     position: relative;
 
-	
+
 }
 
 #student_course{
 	position: relative;
- 
+
+}
+
+
+
+/* byebye and goodbye html */
+.byebye, .deletion{
+  position: relative;
+  text-align: center;
 }
