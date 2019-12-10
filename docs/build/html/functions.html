@@ -14,7 +14,8 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="installation.html" />
+    <link rel="next" title="How to test our functions" href="unit_test.html" />
+    <link rel="prev" title="How to install my app" href="installation.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,17 +32,258 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="functions">
-<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
-<dl class="simple">
-<dt>..automodule:: app.routes</dt><dd><dl class="field-list simple">
-<dt class="field-odd">members</dt>
-<dd class="field-odd"><p></p></dd>
-<dt class="field-even">undoc-members</dt>
-<dd class="field-even"><p></p></dd>
-</dl>
-</dd>
-</dl>
+  <div class="section" id="module-app.routes">
+<span id="functions"></span><h1>Functions<a class="headerlink" href="#module-app.routes" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="app.routes.about">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">about</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.about" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.deleteAccount">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">deleteAccount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.deleteAccount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.index">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.location">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">location</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.location" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.login">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.logout">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.logout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.profilePage">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">profilePage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.profilePage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.register">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">register</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.register" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.removeAccount">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">removeAccount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.removeAccount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="app.routes.save_picture">
+<code class="sig-prename descclassname">app.routes.</code><code class="sig-name descname">save_picture</code><span class="sig-paren">(</span><em class="sig-param">form_picture</em><span class="sig-paren">)</span><a class="headerlink" href="#app.routes.save_picture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-app.forms"></span><dl class="class">
+<dt id="app.forms.CourseForm">
+<em class="property">class </em><code class="sig-prename descclassname">app.forms.</code><code class="sig-name descname">CourseForm</code><span class="sig-paren">(</span><em class="sig-param">formdata=&lt;object object&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.CourseForm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="app.forms.CourseForm.student_courses">
+<code class="sig-name descname">student_courses</code><em class="property"> = &lt;UnboundField(StringField, ('Courses interested in',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.CourseForm.student_courses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.CourseForm.submit">
+<code class="sig-name descname">submit</code><em class="property"> = &lt;UnboundField(SubmitField, ('Search',), {})&gt;</em><a class="headerlink" href="#app.forms.CourseForm.submit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.CourseForm.username">
+<code class="sig-name descname">username</code><em class="property"> = &lt;UnboundField(StringField, ('Username',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.CourseForm.username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.LoginForm">
+<em class="property">class </em><code class="sig-prename descclassname">app.forms.</code><code class="sig-name descname">LoginForm</code><span class="sig-paren">(</span><em class="sig-param">formdata=&lt;object object&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.LoginForm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="app.forms.LoginForm.password">
+<code class="sig-name descname">password</code><em class="property"> = &lt;UnboundField(PasswordField, ('Password',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.LoginForm.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.LoginForm.remember_me">
+<code class="sig-name descname">remember_me</code><em class="property"> = &lt;UnboundField(BooleanField, ('Remember Me',), {})&gt;</em><a class="headerlink" href="#app.forms.LoginForm.remember_me" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.LoginForm.submit">
+<code class="sig-name descname">submit</code><em class="property"> = &lt;UnboundField(SubmitField, ('Sign In',), {})&gt;</em><a class="headerlink" href="#app.forms.LoginForm.submit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.LoginForm.username">
+<code class="sig-name descname">username</code><em class="property"> = &lt;UnboundField(StringField, ('Username',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.LoginForm.username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.RegistrationForm">
+<em class="property">class </em><code class="sig-prename descclassname">app.forms.</code><code class="sig-name descname">RegistrationForm</code><span class="sig-paren">(</span><em class="sig-param">formdata=&lt;object object&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.RegistrationForm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="app.forms.RegistrationForm.course">
+<code class="sig-name descname">course</code><em class="property"> = &lt;UnboundField(StringField, ('What are you studying?',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.RegistrationForm.course" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.RegistrationForm.email">
+<code class="sig-name descname">email</code><em class="property"> = &lt;UnboundField(StringField, ('Email',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;, &lt;wtforms.validators.Email object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.RegistrationForm.email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.RegistrationForm.password">
+<code class="sig-name descname">password</code><em class="property"> = &lt;UnboundField(PasswordField, ('Password',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.RegistrationForm.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.RegistrationForm.password2">
+<code class="sig-name descname">password2</code><em class="property"> = &lt;UnboundField(PasswordField, ('Repeat Password',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;, &lt;wtforms.validators.EqualTo object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.RegistrationForm.password2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.RegistrationForm.submit">
+<code class="sig-name descname">submit</code><em class="property"> = &lt;UnboundField(SubmitField, ('Register',), {})&gt;</em><a class="headerlink" href="#app.forms.RegistrationForm.submit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.RegistrationForm.username">
+<code class="sig-name descname">username</code><em class="property"> = &lt;UnboundField(StringField, ('Username',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.RegistrationForm.username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="app.forms.RegistrationForm.validate_email">
+<code class="sig-name descname">validate_email</code><span class="sig-paren">(</span><em class="sig-param">email</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.RegistrationForm.validate_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="app.forms.RegistrationForm.validate_username">
+<code class="sig-name descname">validate_username</code><span class="sig-paren">(</span><em class="sig-param">username</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.RegistrationForm.validate_username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.profileForm">
+<em class="property">class </em><code class="sig-prename descclassname">app.forms.</code><code class="sig-name descname">profileForm</code><span class="sig-paren">(</span><em class="sig-param">oldName</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.profileForm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="app.forms.profileForm.course">
+<code class="sig-name descname">course</code><em class="property"> = &lt;UnboundField(StringField, ('Update Course',), {})&gt;</em><a class="headerlink" href="#app.forms.profileForm.course" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.profileForm.name">
+<code class="sig-name descname">name</code><em class="property"> = &lt;UnboundField(StringField, ('Update Username',), {})&gt;</em><a class="headerlink" href="#app.forms.profileForm.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.profileForm.picture">
+<code class="sig-name descname">picture</code><em class="property"> = &lt;UnboundField(FileField, ('Update Picture',), {'validators': [&lt;flask_wtf.file.FileAllowed object&gt;]})&gt;</em><a class="headerlink" href="#app.forms.profileForm.picture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.profileForm.submit">
+<code class="sig-name descname">submit</code><em class="property"> = &lt;UnboundField(SubmitField, ('Update Account',), {})&gt;</em><a class="headerlink" href="#app.forms.profileForm.submit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="app.forms.profileForm.validate_name">
+<code class="sig-name descname">validate_name</code><span class="sig-paren">(</span><em class="sig-param">username</em><span class="sig-paren">)</span><a class="headerlink" href="#app.forms.profileForm.validate_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-app.models"></span><dl class="class">
+<dt id="app.models.Post">
+<em class="property">class </em><code class="sig-prename descclassname">app.models.</code><code class="sig-name descname">Post</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.Post" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="app.models.Post.body">
+<code class="sig-name descname">body</code><a class="headerlink" href="#app.models.Post.body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.Post.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#app.models.Post.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.Post.timestamp">
+<code class="sig-name descname">timestamp</code><a class="headerlink" href="#app.models.Post.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.Post.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#app.models.Post.user_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.models.User">
+<em class="property">class </em><code class="sig-prename descclassname">app.models.</code><code class="sig-name descname">User</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.User" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="app.models.User.check_password">
+<code class="sig-name descname">check_password</code><span class="sig-paren">(</span><em class="sig-param">password</em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.User.check_password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.email">
+<code class="sig-name descname">email</code><a class="headerlink" href="#app.models.User.email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#app.models.User.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.image_file">
+<code class="sig-name descname">image_file</code><a class="headerlink" href="#app.models.User.image_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.password_hash">
+<code class="sig-name descname">password_hash</code><a class="headerlink" href="#app.models.User.password_hash" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.posts">
+<code class="sig-name descname">posts</code><a class="headerlink" href="#app.models.User.posts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="app.models.User.set_password">
+<code class="sig-name descname">set_password</code><span class="sig-paren">(</span><em class="sig-param">password</em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.User.set_password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.student_courses">
+<code class="sig-name descname">student_courses</code><a class="headerlink" href="#app.models.User.student_courses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.models.User.username">
+<code class="sig-name descname">username</code><a class="headerlink" href="#app.models.User.username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="app.models.load_user">
+<code class="sig-prename descclassname">app.models.</code><code class="sig-name descname">load_user</code><span class="sig-paren">(</span><em class="sig-param">id</em><span class="sig-paren">)</span><a class="headerlink" href="#app.models.load_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </div>
 
 
@@ -63,14 +305,17 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to install my app</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit_test.html">How to test our functions</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="installation.html" title="previous chapter">&lt;no title&gt;</a></li>
+      <li>Previous: <a href="installation.html" title="previous chapter">How to install my app</a></li>
+      <li>Next: <a href="unit_test.html" title="next chapter">How to test our functions</a></li>
   </ul></li>
 </ul>
 </div>
