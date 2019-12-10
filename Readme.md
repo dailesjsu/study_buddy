@@ -6,6 +6,8 @@ http://studybuddy-sjsu.herokuapp.com
 
 #Unit tets is updated under the app folder. They are named with _test.py under the app folder. Anytime, we push the local repo to remote repo, travis will automatically run the test  
 
+#Sphinx Documentation: docs/build/html/index.html
+
 ## How to use the application:
  Have **flask, python3 and mysql** installed
  - Windows Users: 
